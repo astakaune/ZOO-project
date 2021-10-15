@@ -1,0 +1,59 @@
+#cont-1111-left .cont-new-animal {
+    margin: 10px;
+    width: 235px;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    padding: 10px 10px;
+    background-color: rgba(12, 18, 28, 0.7);
+    border-radius: 8px;
+    border: 0.1px solid var(--colrAnimal1);
+    box-shadow: rgb(0 0 0 / 30%) 0px 19px 38px, rgb(0 0 0 / 22%) 0px 15px 12px;
+}
+
+#cont-1111-left .specie {
+    color: var(--colrAnimal1);
+    font-family: 'Raleway';
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 600;
+    font-size: 20px;
+    padding-bottom: 7px;
+}
+
+#cont-1111-left .items {
+    color: var(--colrAnimal2);
+    font-family: 'Raleway';
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    padding: 5px 0;
+    margin: 5px 0;
+}
+
+#cont-1111-left #buttons {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#cont-1111-left .cont-new-animal button {
+    font-size: 14px;
+    width: 42%;
+    color: var(--colrAnimal1);
+    background-color: transparent;
+    border: 1px solid var(--colrAnimal1);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    cursor: pointer;
+    padding: 7px 7px;
+    margin: 15px 0 0;
+    border-radius: 15px;
+    transition: 1s;
+}
+
+#cont-1111-left .cont-new-animal button:hover {
+    color: var(--colrAnimal2);
+    background-color: var(--colrAnimal1);
+    font-weight: bold;
+}

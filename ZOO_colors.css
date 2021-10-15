@@ -1,0 +1,13 @@
+:root {
+    --colrAnimal1: rgb(3, 233, 244);
+    --colrAnimal2: #c1ecf3;
+    --colrCreate1: rgb(19, 104, 228);
+    --colrCreate2: rgb(166, 193, 233);
+    --colrCreate3: #fff;
+    --colrConfirmDelete1: rgb(19, 104, 228);
+    --colrConfirmDelete2: rgb(166, 193, 233);
+    --colrSort1: rgb(249, 99, 19);
+    --colrSort2: rgb(240, 163, 122);
+    --colrFilter1: rgb(173, 192, 51);
+    --colrFilter2: rgb(221, 235, 134);
+}

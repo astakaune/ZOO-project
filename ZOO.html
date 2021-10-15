@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+<head>
+  <meta charset='UTF-8'>
+  <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+  <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+  <script src='ZOO.js' defer></script>
+  <link rel='Stylesheet' href='ZOO_structure.css'>
+  <link rel='Stylesheet' href='ZOO_colors.css'>
+  <link rel='Stylesheet' href='ZOO_create_animal_form.css'>
+  <link rel='Stylesheet' href='ZOO_animal_form.css'>
+  <link rel='Stylesheet' href='ZOO_sort.css'>
+  <link rel='Stylesheet' href='ZOO_filter.css'>
+  <link rel='Stylesheet' href='ZOO_edit_modal.css'>
+  <link rel='Stylesheet' href='ZOO_confirm_delete_modal.css'>
+  <link rel='Stylesheet' href='ZOO_topButton.css'>
+  <link rel='Stylesheet' href='../../../bit-html-css/FONTS/1_FONTS css failiukai/Raleway.css'>
+  <title>CRUD-ZOO</title>
+</head>
+
+<body>
+
+  <a class='top-button' href='#cont-1121-zooTitle'>TOP</a>
+
+  <div id='cont-1'>
+    <div id='cont-11-row'>
+      <div class='cont-111' id='cont-112-right-col'>
+        <div id='cont-1122-form'>
+          <form id='create'>
+            <h2>New Animal:</h2>
+            <div class='material-input'>
+              <label for='specie'>Specie:</label>
+              <input type='text' class='specie'></input>
+            </div>
+            <div class='material-input'>
+              <label for='tail'>Tail length, cm:</label>
+              <input type='text' class='tail'></input>
+            </div>
+            <div class='material-input'>
+              <label for='color'>Color:</label>
+              <input type='text' class='color'></input>
+            </div>
+            <div class='material-input horn'>
+              <label for='horn'>Has Horns?</label>
+              <input type='checkbox' class='horn' name='horn'></input>
+            </div>
+            <button id='button-create' type='button'>Add animal</button>
+          </form>
+        </div>
+
+        <!--  sorting -->
+        <div id='cont-1121-sorting'>
+          <form>
+            <h2>SORTING:</h2>
+            <div class='button-sort'>
+              <button type='button' id='button-sort-specie'>Specie</button>
+              <button type='button' id='button-sort-tail'>Tail length</button>
+            </div>
+            <div id='cont-radio-buttons'>
+              <div id='cont-button-radio-asc'>
+                <label for='radio-sort-adj'>ASC</label>
+                <input type='radio' class='radio-buttons' id='radio-sort-asc' name='radio-sort-direction' value='ASC'>
+              </div>
+              <div id='cont-button-radio-desc'>
+                <label for='radio-sort-desc'>DESC</label>
+                <input type='radio' class='radio-buttons' id='radio-sort-desc' name='radio-sort-direction' value='DESC'>
+              </div>
+            </div>
+          </form>
+        </div>
+
+        <!-- filtering -->
+        <div id='cont-1121-filter'>
+          <form>
+            <h2>Filtering:</h2>
+            <div id='cont-select'>
+              <label for='properties'>Select property:</label>
+              <select name='properties' id='select-filter-property'></select>
+            </div>
+            <div id='cont-buttons-filter'>
+              <button type='button' id='button-filter'>Filter</button>
+              <button type='button' id='button-filter-showAll'>Show All</button>
+            </div>
+          </form>
+        </div>
+      </div>
+
+      <div id='cont-111-left'>
+        <div id='cont-1121-zooTitle'>
+          <header>Madagascar ZOO</header>
+        </div>
+        <div class='cont-111' id='cont-1111-left'></div>
+      </div>
+
+    </div>
+  </div>
+
+
+
+  <div id='edit' class='modal' tabindex='-1' role='dialog'>
+    <div id='cont-edit-form'>
+      <form id='edit'>
+        <div id='edit-form'>
+          <button class='close' type='button' data-dismiss='modal'><span aria-hidden='true'>&times;</span></button>
+        </div>
+        <h2>Animal edit:</h2>
+        <div class='material-input'>
+          <label for='specie'>Specie:</label>
+          <input type='text' class='specie'></input>
+        </div>
+        <div class='material-input'>
+          <label for='tail'>Tail length, cm:</label>
+          <input type='text' class='tail'></input>
+        </div>
+        <div class='material-input'>
+          <label for='color'>Color:</label>
+          <input type='text' class='color'></input>
+        </div>
+        <div class='material-input horn'>
+          <label for='horn'>Has Horns?</label>
+          <input type='checkbox' class='horn'></input>
+        </div>
+        <div id='edit-buttons'>
+          <button type='button' class='form-edit-button' data-dismiss='modal'>Close</button>
+          <button type='button' class='form-edit-button modal-close' id='button-save'>Save</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <div id='confirm-delete' class='modal'>
+    <div id='cont-confirm-delete'>
+      <form>
+        <div id='confirm-delete-form'>
+          <button class='close' type='button' data-dismiss='modal'><span aria-hidden='true'>&times;</span></button>
+        </div>
+        <h2>Delete confirmation:</h2>
+        <p>Do you really want to delete the animal?</p>
+        <div id='confirm-delete-buttons'>
+          <button type='button' class='button-confirm-delete' id='button-no' data-dismiss='modal'>NO</button>
+          <button type='button' class='button-confirm-delete modal-close' id='button-yes'>YES</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+
+</body>
+
+</html>

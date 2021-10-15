@@ -1,0 +1,105 @@
+#confirm-delete {
+    font-family: Raleway;
+    height: 100vh;
+    width: 100%;
+}
+
+#confirm-delete #cont-confirm-delete {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    z-index: 2;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(216 244 243 / 70%);
+}
+
+#confirm-delete #cont-confirm-delete #confirm-delete-form {
+    width: 100%;
+    height: 25px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+}
+
+#confirm-delete #cont-confirm-delete #confirm-delete-form .close {
+    background-color: transparent;
+    border: none;
+    color: var(--colrConfirmDelete2);
+    font-size: 28px;
+}
+
+#confirm-delete #cont-confirm-delete #confirm-delete-form .close:hover, .close:focus {
+    color: var(--colrConfirmDelete1);
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#confirm-delete #cont-confirm-delete form {
+    text-transform: uppercase;
+    font-weight: 400;
+    letter-spacing: 3px;
+    height: auto;
+    width: 300px;
+    padding: 10px 25px 20px 25px;
+    background-color: rgb(12, 18, 28);
+    border: 1px solid var(--colrConfirmDelete1);
+    border-radius: 8px;
+    color: var(--colrConfirmDelete2);
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+    box-sizing: none;
+}
+
+#confirm-delete #cont-confirm-delete form>h2 {
+    margin-bottom: 60px;
+    color: var(--colrConfirmDelete1);
+}
+
+#confirm-delete #cont-confirm-delete form>p {
+    padding: 20px 0 20px 30px;
+    line-height: 1.75;
+    font-weight: bolder;
+}
+
+#confirm-delete #cont-confirm-delete form #confirm-delete-buttons {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 45px 0 35px 0;
+}
+
+#confirm-delete #cont-confirm-delete form .button-confirm-delete {
+    font-size: 16px;
+    font-weight: bolder;
+    width: 40%;
+    color: var(--colrConfirmDelete1);
+    background-color: transparent;
+    border: 1px solid var(--colrConfirmDelete1);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    cursor: pointer;
+    padding: 7px 7px;
+    /* margin: 15px 0 0; */
+    border-radius: 15px;
+    transition: 1s;
+}
+
+#confirm-delete #cont-confirm-delete form .button-confirm-delete:hover {
+    color: white;
+    background-color: var(--colrConfirmDelete1);
+    font-weight: bold;
+}
+
+@media screen and (max-width: 720px) {
+    form {
+        box-sizing: border-box;
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+}

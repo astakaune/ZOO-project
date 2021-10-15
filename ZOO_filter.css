@@ -1,0 +1,86 @@
+#cont-1121-filter {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Raleway;
+}
+
+#cont-1121-filter form {
+    text-transform: uppercase;
+    background-color: rgb(12, 18, 28);
+    border: 1px solid var(--colrFilter1);
+    height: auto;
+    width: 280px;
+    padding: 20px 25px;
+    border-radius: 8px;
+    color: white;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+
+#cont-1121-filter form>h2 {
+    margin-bottom: 10px;
+    color: var(--colrFilter1);
+    letter-spacing: 3px;
+}
+
+#cont-1121-filter form #cont-buttons-filter {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#cont-1121-filter form #cont-buttons-filter button {
+    font-size: 14px;
+    color: var(--colrFilter2);
+    background-color: transparent;
+    border: 1px solid var(--colrFilter2);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    cursor: pointer;
+    padding: 7px 7px;
+    margin: 15px 0 0;
+    border-radius: 15px;
+    transition: 1s;
+}
+
+#cont-1121-filter form #cont-buttons-filter button:hover {
+    color: #000;
+    background-color: var(--colrFilter2);
+    font-weight: bold;
+}
+
+#cont-1121-filter form #cont-buttons-filter button #button-filter {
+    width: 35%;
+}
+
+#cont-1121-filter form #cont-buttons-filter button #button-filter-showAll {
+    width: 50%;
+}
+
+#cont-1121-filter form #cont-select {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+#cont-1121-filter form #cont-select #select-filter-property {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-transform: uppercase;
+}
+
+#cont-1121-filter form #cont-select label {
+    font-size: 15px;
+    color: var(--colrFilter2);
+    background-color: transparent;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: 1s;
+}
+
+#cont-1121-filter form select {
+    background-color: var(--colrFilter1);
+}

@@ -1,0 +1,96 @@
+#cont-1121-sorting {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Raleway;
+    margin: 10px 0;
+}
+
+#cont-1121-sorting form {
+    background-color: rgb(12, 18, 28);
+    border: 1px solid var(--colrSort1);
+    height: auto;
+    width: 280px;
+    padding: 20px 25px;
+    border-radius: 8px;
+    color: white;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+    /* box-sizing: none; */
+}
+
+#cont-1121-sorting form>h2 {
+    color: var(--colrSort1);
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+#cont-1121-sorting form .button-sort {
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 10px;
+}
+
+#cont-1121-sorting form .button-sort button {
+    font-size: 14px;
+    color: var(--colrSort2);
+    background-color: transparent;
+    border: none;
+    border: 1px solid var(--colrSort2);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    cursor: pointer;
+    padding: 7px 7px;
+    margin: 15px 0 0;
+    border-radius: 15px;
+    transition: 1s;
+}
+
+#cont-1121-sorting form .button-sort button:hover {
+    color: white;
+    background-color: var(--colrSort1);
+    font-weight: bold;
+}
+
+#cont-1121-sorting form .button-sort button #button-sort-specie {
+    width: 35%;
+}
+
+#cont-1121-sorting form .button-sort button #button-sort-tail {
+    width: 50%;
+}
+
+#cont-1121-sorting form #cont-radio-buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+
+#cont-1121-sorting form #cont-radio-buttons #cont-button-radio-asc {
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+#cont-1121-sorting form #cont-radio-buttons #cont-button-radio-desc {
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+#cont-1121-sorting form #cont-radio-buttons label {
+    font-size: 15px;
+    font-weight: bolder;
+    color: var(--colrSort2);
+    background-color: transparent;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    cursor: pointer;
+    padding-right: 8px;
+    transition: 1s;
+}
