@@ -12,7 +12,7 @@ body, html {
 }
 
 body {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0)), url("Madagascar-animated-film.jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0)), url("./Madagascar-animated-film.jpg");
     width: 100%;
     height: auto;
     background-position: center;

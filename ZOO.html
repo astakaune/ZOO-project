@@ -6,15 +6,15 @@
   <meta http-equiv='X-UA-Compatible' content='IE=edge'>
   <meta name='viewport' content='width=device-width, initial-scale=1.0'>
   <script src='ZOO.js' defer></script>
-  <link rel='Stylesheet' href='ZOO_structure.css'>
-  <link rel='Stylesheet' href='ZOO_colors.css'>
-  <link rel='Stylesheet' href='ZOO_create_animal_form.css'>
-  <link rel='Stylesheet' href='ZOO_animal_form.css'>
-  <link rel='Stylesheet' href='ZOO_sort.css'>
-  <link rel='Stylesheet' href='ZOO_filter.css'>
-  <link rel='Stylesheet' href='ZOO_edit_modal.css'>
-  <link rel='Stylesheet' href='ZOO_confirm_delete_modal.css'>
-  <link rel='Stylesheet' href='ZOO_topButton.css'>
+  <link rel='Stylesheet' href='./CSS/ZOO_animal_form.css'>
+  <link rel='Stylesheet' href='./CSS/ZOO_colors.css'>
+  <link rel='Stylesheet' href='./CSS/ZOO_confirm_delete_modal.css'>
+  <link rel='Stylesheet' href='./CSS/ZOO_create_animal_form.css'>
+  <link rel='Stylesheet' href='./CSS/ZOO_edit_modal.css'>
+  <link rel='Stylesheet' href='./CSS/ZOO_filter.css'>
+  <link rel='Stylesheet' href='./CSS/ZOO_sort.css'>
+  <link rel='Stylesheet' href='./CSS/ZOO_structure.css'>
+  <link rel='Stylesheet' href='./CSS/ZOO_topButton.css'>
   <link rel='Stylesheet' href='../../../bit-html-css/FONTS/1_FONTS css failiukai/Raleway.css'>
   <title>CRUD-ZOO</title>
 </head>
@@ -23,6 +23,7 @@
 
   <a class='top-button' href='#cont-1121-zooTitle'>TOP</a>
 
+  <!-- --------------------Create animal------------------------ -->
   <div id='cont-1'>
     <div id='cont-11-row'>
       <div class='cont-111' id='cont-112-right-col'>
@@ -49,7 +50,7 @@
           </form>
         </div>
 
-        <!--  sorting -->
+        <!--  --------------sorting--------------------->
         <div id='cont-1121-sorting'>
           <form>
             <h2>SORTING:</h2>
@@ -70,7 +71,7 @@
           </form>
         </div>
 
-        <!-- filtering -->
+        <!------------- filtering------------- -->
         <div id='cont-1121-filter'>
           <form>
             <h2>Filtering:</h2>
@@ -86,6 +87,7 @@
         </div>
       </div>
 
+      <!-- -----------------Title--------------- -->
       <div id='cont-111-left'>
         <div id='cont-1121-zooTitle'>
           <header>Madagascar ZOO</header>
@@ -96,8 +98,7 @@
     </div>
   </div>
 
-
-
+  <!-- ----------edit modal----------- -->
   <div id='edit' class='modal' tabindex='-1' role='dialog'>
     <div id='cont-edit-form'>
       <form id='edit'>
@@ -129,6 +130,7 @@
     </div>
   </div>
 
+  <!-- -----------------delete confirmation modal--------------- -->
   <div id='confirm-delete' class='modal'>
     <div id='cont-confirm-delete'>
       <form>
